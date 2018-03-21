@@ -1,0 +1,7 @@
+.header {
+  background-color: lightblue;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top:0;
+}
