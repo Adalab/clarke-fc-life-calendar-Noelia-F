@@ -7,6 +7,7 @@ class Header extends Component {
     return (
       <header className="header">
         <div className="header__plus">
+          <p>Añadir día</p>
         </div>
       </header>
     );

@@ -1,0 +1,13 @@
+.calendar{
+  padding-top: 100px;
+}
+.calendar__grid{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.calendar__card{
+  width: 25%;
+}
