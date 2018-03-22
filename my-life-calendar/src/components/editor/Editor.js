@@ -9,6 +9,7 @@ class Editor extends Component {
   render() {
     return (
       <div className="editor">
+        <h1 className="editor__title">¿Que tal ha ido el día de hoy?</h1>
         <form className="editor__form" action="/signup" method="post">
           <EditorDate />
           <EditorStatus />

@@ -5,11 +5,15 @@ class EditorStatus extends Component {
   render() {
     return (
       <div className="editor__status">
-        <label className="label">Estado</label>
-        <input className="choose" id="happy" type="radio" value="happy" name="happy" />
-        <label className="label--smiley" for="happy">:)</label>
-        <input className="choose" id="sad" type="radio" value="sad" name="sad" />
-        <label className="label--smiley" for="sad">:(</label>
+        <h2 className="label label--status">Estado</h2>
+        <div className="choose__box">
+          <input className="choose" id="happy" type="radio" value="happy" name="status" />
+          <label className="label--smiley" for="happy">:)</label>
+        </div>
+        <div className="choose__box">
+          <input className="choose" id="sad" type="radio" value="sad" name="status" />
+          <label className="label--smiley" for="sad">:(</label>
+        </div>
       </div>
     );
   }

@@ -6,7 +6,7 @@ class EditorComments extends Component {
     return (
       <div className="editor__comments">
         <label className="label" for="comment">Mensaje</label>
-        <input className="cell" id="comment" type="text"></input>
+        <textarea className="cell" col="10" cel="40"></textarea>
       </div>
     );
   }
