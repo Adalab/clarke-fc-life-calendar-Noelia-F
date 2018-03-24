@@ -34,7 +34,6 @@ class App extends Component {
     this.setState({
       mood: status
     })
-    console.log('mood')
   }
   handleMessage(event){
     const text = event.target.value;
