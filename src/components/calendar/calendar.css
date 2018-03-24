@@ -4,9 +4,18 @@
 .calendar__grid{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
   height: 100%;
   list-style: none;
+  padding: 0;
 }
 .calendar__card{
   width: 40%;
+}
+
+@media all and (min-width: 490px) {
+  .calendar__card{
+    width: 20%;
+  }
 }
