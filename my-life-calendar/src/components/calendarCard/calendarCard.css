@@ -1,11 +1,22 @@
-.icon{
+.icon__box{
   width: 80px;
-  height: 0;
-  padding-top: 80px;
-  overflow: hidden;
+  height: 80px;
+}
+.icon{
+  display: block;
   margin: auto;
-  background-image: url('./sad.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 80px;
+}
+.details__label{
+  width: 80%;
+  background-color: #d6ab0e;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.details__comments{
+  text-align: center;
+  font-style: italic;
 }

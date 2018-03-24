@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
 import './calendarCard.css';
-import CalendarDetails from '../calendarDetails/CalendarDetails.js';
-import {Link, Route, Switch} from 'react-router-dom';
+import happy from './happy.svg';
+import sad from './sad.svg';
 
 class CalendarCard extends Component {
   render() {
     return (
       <div>
-        <Link className="link" to={`/details`}>
           <div className="icon">
-            <p>1</p>
+            {this.props.mood === 'happy' ?
+            <img className="icon" src={happy} alt={this.props.mood} title={this.props.date} /> :
+            <img className="icon" src={sad} alt={this.props.mood} title={this.props.date} />
+          }
           </div>
-        </Link>
-        <Switch>
-        <Route exact path={`/details`} render = {() =>
-          <CalendarDetails /> }/>
-        </Switch>
+          <div className="details__label">
+            <p>{this.props.date}</p>
+          </div>
+          <div className="details__comments">
+            <p>{this.props.message}</p>
+          </div>
       </div>
     );
   }

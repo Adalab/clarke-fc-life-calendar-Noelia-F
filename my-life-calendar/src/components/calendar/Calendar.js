@@ -7,9 +7,16 @@ class Calendar extends Component {
     return (
       <div className="calendar">
         <ul className="calendar__grid">
+        {this.props.allData.sort(function(a,b) {
+            return new Date(a.date) - new Date(b.date);}).map((data) =>
           <li className="calendar__card">
-            <CalendarCard/>
+            <CalendarCard
+            mood={data.mood}
+            date = {data.date}
+            message = {data.message}
+            />
           </li>
+          )}
         </ul>
       </div>
     );

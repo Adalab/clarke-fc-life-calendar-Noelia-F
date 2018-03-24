@@ -6,7 +6,7 @@ class EditorDate extends Component {
     return (
       <div className="editor__date">
         <label className="label" for="date">Fecha</label>
-        <input className="cell" id="date" type="date"></input>
+        <input className="cell" id="date" type="date" onChange= {this.props.handleDate}></input>
       </div>
     );
   }

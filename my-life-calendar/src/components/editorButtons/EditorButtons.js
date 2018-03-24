@@ -8,7 +8,7 @@ class EditorButtons extends Component {
     return (
       <div className="editor__buttons">
         <Link className="link" to='/'>
-          <input className="button" type="submit" value="GUARDAR"></input>
+          <input className="button" type="submit" value="GUARDAR" onClick={this.props.onClickAddMood}></input>
         </Link>
         <Link className="link" to='/'>
           <input className="button button--cancel" type="button" value="CANCELAR"></input>
